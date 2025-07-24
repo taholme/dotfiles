@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -84,6 +84,7 @@ plugins=(
 	keychain
 	copyfile
 	copypath
+	tldr
 	zsh-autosuggestions
 	fast-syntax-highlighting
 	zsh-syntax-highlighting
@@ -126,7 +127,7 @@ fi
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
-bindkey -v
+bindkey -e
 
 
 zstyle :compinstall filename '/home/taholme/.zshrc'
