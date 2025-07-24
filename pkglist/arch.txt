@@ -21,6 +21,7 @@ imagemagick
 intel-ucode
 iwd
 jq
+keychain
 libpulse
 linux
 linux-firmware

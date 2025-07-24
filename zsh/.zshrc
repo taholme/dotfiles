@@ -130,13 +130,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # duckdb
 export PATH="$HOME/.duckdb/cli/latest:$PATH"
 
-# Start ssh-agent if not already running
-if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-  eval "$(ssh-agent -s)"
-fi
-
-# Add SSH key if not already added
-if ! ssh-add -l | grep -q "id_ed25519"; then
-  ssh-add ~/.ssh/id_ed25519
-fi
-
+# Use keychain to manage ssh-agent
+eval "$(keychain --quiet --eval id_ed25519)"
