@@ -1,0 +1,9 @@
+-- Set journal mode to WAL for every new session (on supported DBs)
+PRAGMA journal_mode = WAL;
+
+-- Set output mode to "box"
+.mode box
+
+-- (Optional) Enable column headers and line numbers
+.headers on
+
