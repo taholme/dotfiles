@@ -1,0 +1,9 @@
+bemoji
+clipman
+libfprint-2-tod1-synatudor-git
+libfprint-tod-git
+networkmanager-dmenu-git
+paru
+paru-debug
+ttf-joypixels
+ttf-times-new-roman

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Paths (relative to repo root)
+ARCH_FILE="pkglist/arch.txt"
+AUR_FILE="pkglist/aur.txt"
+
+echo "[pre-commit] Updating package lists..."
+
+# Update package list files
+pacman -Qqe | grep -vx "$(pacman -Qqm)" > "$ARCH_FILE"
+pacman -Qqm > "$AUR_FILE"
+
+# Add changes to the commit
+git add "$ARCH_FILE" "$AUR_FILE"
+
+echo "[pre-commit] Package lists updated and staged."
+

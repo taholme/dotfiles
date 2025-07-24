@@ -74,9 +74,10 @@ plugins=(
 	git
 	fzf
 	zsh-autosuggestions
-	zsh-autocomplete
 	fast-syntax-highlighting
+	zsh-syntax-highlighting
 )
+# zsh-autocomplete bun golang rust man sudo pip python ssh ssh-agent
 
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 source $ZSH/oh-my-zsh.sh
@@ -125,6 +126,9 @@ compinit
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# duckdb
+export PATH="$HOME/.duckdb/cli/latest:$PATH"
 
 # Start ssh-agent if not already running
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
