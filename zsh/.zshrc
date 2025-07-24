@@ -73,11 +73,22 @@ HIST_STAMPS="dd.mm.yyyy"
 plugins=(
 	git
 	fzf
+	bun
+	golang
+	rust
+	man
+	sudo
+	pip
+	python
+	ssh
+	keychain
+	copyfile
+	copypath
 	zsh-autosuggestions
 	fast-syntax-highlighting
 	zsh-syntax-highlighting
 )
-# zsh-autocomplete bun golang rust man sudo pip python ssh ssh-agent
+# zsh-autocomplete 
 
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 source $ZSH/oh-my-zsh.sh

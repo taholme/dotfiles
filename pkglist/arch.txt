@@ -55,7 +55,9 @@ sway
 swaybg
 swayidle
 swaylock
+tldr
 tree
+ttf-cascadia-code-nerd
 ttf-hack
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
