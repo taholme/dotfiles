@@ -4,6 +4,7 @@ brightnessctl
 drawio-desktop
 efibootmgr
 fastfetch
+fd
 firefox
 foot
 fprintd

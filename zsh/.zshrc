@@ -81,7 +81,6 @@ plugins=(
 	pip
 	python
 	ssh
-	keychain
 	copyfile
 	copypath
 	tldr
@@ -89,7 +88,9 @@ plugins=(
 	fast-syntax-highlighting
 	zsh-syntax-highlighting
 )
-# zsh-autocomplete 
+# zsh-autocomplete
+ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste up-line-or-search down-line-or-search expand-or-complete accept-line push-line-or-edit)
+
 
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 source $ZSH/oh-my-zsh.sh
