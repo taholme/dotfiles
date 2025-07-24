@@ -56,6 +56,7 @@ sway
 swaybg
 swayidle
 swaylock
+tinymist
 tldr
 tree
 ttf-cascadia-code-nerd

@@ -236,8 +236,12 @@ bar {
 
 exec wl-paste -p -t text --watch clipman store --no-persist -P --histpath="~/.local/share/clipman-primary.json"
 
-exec swaymsg 'workspace 3; exec obsidian'
-exec swaymsg 'workspace 2; exec firefox'
-exec swaymsg 'workspace 1; exec ghostty'
+exec --no-startup-id swaymsg 'workspace 3; --no-startup-id obsidian'
+exec --no-startup-id swaymsg 'workspace 2; --no-startup-id firefox'
+exec --no-startup-id swaymsg 'workspace 1; --no-startup-id ghostty'
+
+# assign [app_id="firefox"] 2
+# assign [class="obidian"] 4
+# assign [app_id="signal_desktop"] 5
 
 include /etc/sway/config.d/*
