@@ -7,6 +7,7 @@ efibootmgr
 fastfetch
 fd
 firefox
+fish
 foot
 fprintd
 fuzzel
