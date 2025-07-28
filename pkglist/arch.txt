@@ -1,5 +1,6 @@
 base
 base-devel
+bob
 brightnessctl
 drawio-desktop
 efibootmgr
@@ -26,12 +27,12 @@ keychain
 libpulse
 linux
 linux-firmware
+lua-language-server
 man-db
 mpv
 mupdf
 mupdf-tools
 nano
-neovim
 networkmanager
 noto-fonts
 noto-fonts-emoji
