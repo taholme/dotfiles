@@ -1,7 +1,7 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.signcolumn = "yes"
--- vim.opt.termguicolors = true
+vim.opt.termguicolors = true
 vim.opt.wrap = false
 vim.opt.tabstop = 4
 vim.opt.swapfile = false
@@ -62,6 +62,6 @@ vim.lsp.config("lua_ls", {
 	}
 })
 
-require "vague".setup() -- { transparent = true }
+require "vague".setup({ transparent = true })
 vim.cmd("colorscheme vague")
 vim.cmd(":hi statusline guibg=NONE")
