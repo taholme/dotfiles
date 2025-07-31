@@ -43,7 +43,7 @@ font-family = Hack
 # resize-overlay-duration = 4s 200ms
 
 shell-integration = fish
-theme = catppuccin-macchiato.conf
+theme = catppuccin-macchiato
 mouse-hide-while-typing = true
 scrollback-limit = 1000000
 
