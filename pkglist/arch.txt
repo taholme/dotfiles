@@ -1,5 +1,6 @@
 base
 base-devel
+bat
 bob
 brightnessctl
 drawio-desktop
@@ -48,6 +49,7 @@ pipewire-jack
 pipewire-pulse
 python
 ripgrep
+ruff
 rust
 signal-desktop
 slurp
@@ -80,6 +82,7 @@ wpa_supplicant
 wtype
 xdg-utils
 xorg-xwayland
+yq
 zram-generator
 zsh
 zsh-completions
