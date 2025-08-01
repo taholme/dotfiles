@@ -5,7 +5,6 @@ libfprint-tod-git
 networkmanager-dmenu-git
 paru
 paru-debug
-processing
 ttf-joypixels
 ttf-times-new-roman
 typstyle

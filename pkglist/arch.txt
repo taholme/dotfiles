@@ -71,6 +71,7 @@ ttf-space-mono-nerd
 typst
 unzip
 usbutils
+uv
 vim
 viu
 waybar

@@ -53,7 +53,7 @@ vim.keymap.set('n', '<leader>e', ":Oil<CR>")
 vim.keymap.set('n', '<leader>p', ":TypstPreview<CR>")
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 vim.keymap.set('n', '<leader>fj', ":%!jq '.'<CR>")
-vim.lsp.enable({ "lua_ls", "biome", "tinymist", "emmetls", "ruff", "processing" })
+vim.lsp.enable({ "lua_ls", "biome", "tinymist", "emmetls", "ruff" })
 
 -- Remove LSP warning
 vim.lsp.config("lua_ls", {
