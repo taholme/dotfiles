@@ -83,6 +83,7 @@ wtype
 xdg-utils
 xorg-xwayland
 yq
+yt-dlp
 zram-generator
 zsh
 zsh-completions

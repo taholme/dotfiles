@@ -19,7 +19,7 @@
 # ==========================
 # # The config file consists of simple key-value pairs,
 # # separated by equals signs.
-font-family = Hack
+# font-family = JetBrainsMono
 # window-padding-x = 2
 #
 # # Spacing around the equals sign does not matter.
@@ -42,28 +42,13 @@ font-family = Hack
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
+font-family = Hack
 shell-integration = fish
 theme = catppuccin-macchiato
 mouse-hide-while-typing = true
 scrollback-limit = 1000000
 
-keybind = ctrl+n=new_window
 keybind = ctrl+w=close_window
-keybind = ctrl+t=new_tab
-
-keybind = ctrl+h=goto_split:left
-keybind = ctrl+j=goto_split:bottom
-keybind = ctrl+k=goto_split:top
-keybind = ctrl+l=goto_split:right
-
-keybind = ctrl+a>h=new_split:left
-keybind = ctrl+a>j=new_split:down
-keybind = ctrl+a>k=new_split:up
-keybind = ctrl+a>l=new_split:right
-keybind = ctrl+a>f=toggle_split_zoom
-
-keybind = ctrl+a>n=next_tab
-keybind = ctrl+a>p=previous_tab
 
 keybind = ctrl+shift+physical:comma=reload_config
 

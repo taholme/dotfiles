@@ -73,7 +73,7 @@ input type:keyboard {
     bindsym $mod+Return exec $term
 
     # Kill focused window
-    bindsym $mod+Shift+q kill
+    bindsym $mod+w kill
 
     # Start your launcher
     bindsym $mod+d exec $menu
@@ -152,13 +152,13 @@ input type:keyboard {
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
-    bindsym $mod+v splitv
+    # bindsym $mod+b splith
+    # bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
+    bindsym $mod+b layout stacking
+    bindsym $mod+v layout tabbed
+    bindsym $mod+s layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen

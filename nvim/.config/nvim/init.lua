@@ -3,11 +3,13 @@ vim.opt.relativenumber = true
 vim.opt.signcolumn = "yes"
 vim.opt.termguicolors = true
 vim.opt.wrap = false
-vim.opt.tabstop = 4
+vim.opt.tabstop = 2
 vim.opt.swapfile = false
-vim.g.mapleader = " "
+vim.opt.mouse = ""
+vim.opt.path = "**"
 vim.opt.winborder = "rounded"
 vim.opt.clipboard = "unnamedplus"
+vim.g.mapleader = " "
 
 vim.keymap.set('n', '<leader>o', ':update<CR> :source<CR>')
 vim.keymap.set('n', '<leader>w', ':write<CR>')
@@ -48,7 +50,9 @@ require "autoclose".setup()
 vim.keymap.set('n', '<leader>f', ":Pick files<CR>")
 vim.keymap.set('n', '<leader>h', ":Pick help<CR>")
 vim.keymap.set('n', '<leader>e', ":Oil<CR>")
+vim.keymap.set('n', '<leader>p', ":TypstPreview<CR>")
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
+vim.keymap.set('n', '<leader>fj', ":%!jq '.'<CR>")
 vim.lsp.enable({ "lua_ls", "biome", "tinymist", "emmetls", "ruff" })
 
 -- Remove LSP warning
@@ -59,6 +63,14 @@ vim.lsp.config("lua_ls", {
 				globals = { "vim" }
 			}
 		}
+	}
+})
+
+vim.lsp.config("tinymist", {
+	cmd = { "tinymist" },
+	filetypes = { "typst" },
+	settings = {
+		formatterMode = "typstyle",
 	}
 })
 
