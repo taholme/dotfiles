@@ -14,3 +14,4 @@ set laststatus=2
 set showmode
 set showcmd
 set colorcolumn=80
+set mouse=""
