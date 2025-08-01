@@ -1,4 +1,5 @@
-fzf --fish | source
+# fzf --fish | source
+sk --shell fish | source
 
 if status is-login	
 	if type -q keychain
