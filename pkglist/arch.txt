@@ -16,6 +16,7 @@ fzf
 ghostty
 gimp
 git
+github-cli
 go
 grim
 grub
@@ -52,6 +53,7 @@ ripgrep
 ruff
 rust
 signal-desktop
+skim
 slurp
 smartmontools
 sof-firmware
