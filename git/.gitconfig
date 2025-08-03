@@ -5,6 +5,7 @@
 [core]
 	editor = nvim
 	autocrlf = input
+	whitespace = trailing-space,-space-before-tab,indent-with-non-tab,cr-at-eol
 #[push]
 #	default = current
 
