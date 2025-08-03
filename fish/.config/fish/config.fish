@@ -2,10 +2,6 @@
 sk --shell fish | source
 
 if status is-login	
-	if type -q keychain
-		keychain --quiet --eval id_ed25519 | source
-	end
-	
 	set TTY1 (tty)
 	[ "$TTY1" = /dev/tty1 ] && exec sway &>~/.Wsession.errors
 end
