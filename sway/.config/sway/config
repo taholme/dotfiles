@@ -231,17 +231,22 @@ bar {
 }
 
 #
+# Layout
+#
+
+assign [app_id="firefox"] 1
+assign [class="obidian"] 2
+assign [app_id="com.mitchellh.ghostty"] 3
+assign [app_id="signal_desktop"] 5
+assign [app_id="gimp"] 6
+
+#
 # Autostart
 #
 
+exec --no-startup-id firefox
+exec --no-startup-id ghostty
+
 exec wl-paste -p -t text --watch clipman store --no-persist -P --histpath="~/.local/share/clipman-primary.json"
-
-exec --no-startup-id swaymsg 'workspace 3; exec --no-startup-id obsidian'
-exec --no-startup-id swaymsg 'workspace 2; exec --no-startup-id firefox'
-exec --no-startup-id swaymsg 'workspace 1; exec --no-startup-id ghostty'
-
-# assign [app_id="firefox"] 2
-# assign [class="obidian"] 4
-# assign [app_id="signal_desktop"] 5
 
 include /etc/sway/config.d/*

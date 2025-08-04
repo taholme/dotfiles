@@ -1,5 +1,4 @@
-# fzf --fish | source
-sk --shell fish | source
+fzf --fish | source
 
 if status is-login	
 	set TTY1 (tty)
