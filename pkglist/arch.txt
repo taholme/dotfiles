@@ -27,6 +27,7 @@ intel-ucode
 iwd
 jq
 keychain
+keyd
 libpulse
 linux
 linux-firmware
