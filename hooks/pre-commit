@@ -13,5 +13,7 @@ pacman -Qqm > "$AUR_FILE"
 # Add changes to the commit
 git add "$ARCH_FILE" "$AUR_FILE"
 
+exec git diff-index --check --cached HEAD --
+
 echo "[pre-commit] Package lists updated and staged."
 
