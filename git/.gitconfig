@@ -5,7 +5,7 @@
 [core]
 	editor = nvim
 	autocrlf = input
-	whitespace = trailing-space,-space-before-tab,indent-with-non-tab,cr-at-eol
+	# whitespace = trailing-space,-space-before-tab,indent-with-non-tab,cr-at-eol
 
 #[push]
 #	default = current
@@ -24,7 +24,9 @@
 
 [color]
 	ui = auto
+
 [pull]
 	rebase = false
+
 [credential "https://github.com"]
 	helper = !/usr/bin/gh auth git-credential
