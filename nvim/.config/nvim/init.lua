@@ -10,8 +10,10 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.termguicolors = true
 vim.opt.undofile = true
-vim.opt.signcolumn = "yes"
+vim.opt.incsearch = true
 vim.opt.path = "**"
+vim.opt.clipboard = "unnamedplus"
+vim.opt.signcolumn = "yes"
 vim.opt.completeopt = { "menuone", "noselect", "popup" }
 
 local map = vim.keymap.set
@@ -26,6 +28,8 @@ map('n', '<leader>S', ':sf #<CR>')
 map({ 'n', 'v' }, '<leader>y', '"+y')
 map({ 'n', 'v' }, '<leader>d', '"+d')
 map({ 'n', 'v' }, '<leader>c', '1z=')
+map('n', '<leader>gD', vim.lsp.buf.declaration, {})
+map('n', '<leader>gd', vim.lsp.buf.definition, {})
 
 vim.pack.add({
 	{ src = "https://github.com/vague2k/vague.nvim" },
@@ -33,8 +37,10 @@ vim.pack.add({
 	{ src = "https://github.com/echasnovski/mini.pick" },
 	{ src = "https://github.com/m4xshen/autoclose.nvim" },
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },
+	{ src = "https://github.com/neovim/nvim-lspconfig" },
 	{ src = "https://github.com/chomosuke/typst-preview.nvim" },
 	{ src = "https://github.com/mason-org/mason.nvim" },
+	{ src = "https://github.com/NvChad/showkeys",                 opt = true },
 	{ src = "https://github.com/L3MON4D3/LuaSnip" },
 })
 
@@ -48,6 +54,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 })
 
 require "mason".setup()
+require "showkeys".setup({ position = "top-right" })
 require "oil".setup()
 require "mini.pick".setup()
 require "autoclose".setup()
@@ -58,7 +65,7 @@ map('n', '<leader>e', ":Oil<CR>")
 map('n', '<leader>lf', vim.lsp.buf.format)
 map('n', '<leader>fj', ":%!jq '.'<CR>")
 
-vim.lsp.enable({ "lua_ls", "tinymist", "emmetls", "ruff" })
+vim.lsp.enable({ "lua_ls", "tinymist", "emmetls", "ruff", "ts_ls" })
 require('nvim-treesitter.configs').setup({ highlight = { enable = true, }, })
 
 
