@@ -2,6 +2,7 @@ bemoji
 clipman
 libfprint-2-tod1-synatudor-git
 libfprint-tod-git
+localsend
 networkmanager-dmenu-git
 paru
 paru-debug

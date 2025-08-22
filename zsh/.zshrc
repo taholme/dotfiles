@@ -145,3 +145,5 @@ export PATH="$HOME/.duckdb/cli/latest:$PATH"
 
 # Use keychain to manage ssh-agent
 eval "$(keychain --quiet --eval id_ed25519)"
+
+source /home/taholme/.config/broot/launcher/bash/br

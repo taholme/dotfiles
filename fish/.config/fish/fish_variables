@@ -1,6 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export EDITOR:nvim
+SETUVAR --export GOBIN:/home/taholme/\x2ego/bin
+SETUVAR --export --path GOPATH:/home/taholme/\x2ego
 SETUVAR --export MANPAGER:nvim\x20\x2bMan\x21
 SETUVAR --export --path PATH:/home/taholme/\x2educkdb/cli/latest\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/usr/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl
 SETUVAR --export SSH_AGENT_PID:670

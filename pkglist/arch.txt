@@ -3,6 +3,7 @@ base-devel
 bat
 bob
 brightnessctl
+broot
 drawio-desktop
 efibootmgr
 fastfetch
@@ -26,6 +27,7 @@ imagemagick
 intel-ucode
 iwd
 jq
+keepassxc
 keychain
 keyd
 libpulse
@@ -33,6 +35,7 @@ linux
 linux-firmware
 lua-language-server
 man-db
+mpd
 mpv
 mupdf
 mupdf-tools
@@ -51,8 +54,8 @@ pipewire-jack
 pipewire-pulse
 python
 ripgrep
+rmpc
 ruff
-rust
 signal-desktop
 skim
 slurp
@@ -65,6 +68,7 @@ swayidle
 swaylock
 tinymist
 tldr
+tmux
 tree
 ttf-cascadia-code-nerd
 ttf-hack
@@ -79,6 +83,7 @@ vim
 viu
 waybar
 wget
+wireguard-tools
 wireless_tools
 wireplumber
 wmenu
@@ -88,6 +93,9 @@ xdg-utils
 xorg-xwayland
 yq
 yt-dlp
+zathura
+zathura-cb
+zathura-pdf-mupdf
 zram-generator
 zsh
 zsh-completions

@@ -237,7 +237,7 @@ bar {
 assign [app_id="firefox"] 1
 assign [class="obidian"] 2
 assign [app_id="com.mitchellh.ghostty"] 3
-assign [app_id="signal_desktop"] 5
+assign [class="Signal"] 5
 assign [app_id="gimp"] 6
 
 #
